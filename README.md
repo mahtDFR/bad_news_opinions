@@ -19,6 +19,7 @@ More samples can be found [here](sample_output).
 
 - Install dependencies
 - Add API keys to ``keys_blank.py`` and rename it to ``keys.py``
+- Make sure ```chromedriver.exe``` is placed in the working directory
 - Run ``main.py`` from a terminal
 - The script will scrape tweets and then dump 30 png images in a ```bad_opinions``` directory inside the current working directory
 
