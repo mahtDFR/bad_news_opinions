@@ -9,7 +9,7 @@ More samples can be found [here](sample_output).
 
 ### Prerequisites
 
-- [Python 3](https://www.python.org/ftp/python/3.8.2/python-3.8.2.exe) (I used 3.8)
+- [Python 3](https://www.python.org/downloads/) (I used 3.8)
 - [Tweepy](http://docs.tweepy.org/en/latest/install.html) + API keys
 - [Requests](https://requests.readthedocs.io/en/master/user/install/)
 - [Beautiful soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
