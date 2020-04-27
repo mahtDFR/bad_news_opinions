@@ -1,6 +1,6 @@
 ### Fake news opinion column
 
-Scrapes tweets from [@anon_opin](https://twitter.com/anon_opin) and presents them as opinion columns from [The Guardian](https://www.theguardian.com/commentisfree/2020/apr/25/contact-apps-wont-end-lockdown-but-they-might-kill-off-democracy).
+Scrapes tweets from [@anon_opin](https://twitter.com/anon_opin) and presents them as opinion columns from [The Guardian](https://www.theguardian.com/commentisfree/2020/apr/22/eu-procurement-johnson-priorities-coronavirus-pandemic).
 
 ![alt text](sample_output/udakepmb.png "Sample output")
 
