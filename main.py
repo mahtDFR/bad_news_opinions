@@ -88,8 +88,8 @@ for l in links_cycle:
 	while True:
 		try:
 			# screenshot the html element (in this case the element class name is "u-cf")
-			print(":: png dumped to: " + dest + "/" + filename + "\n")
 			driver.find_element_by_class_name("u-cf").screenshot(dest + "/" + filename)
+			print(":: png dumped to: " + dest + "/" + filename + "\n")
 		except:
 			Exception
 		break
