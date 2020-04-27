@@ -4,6 +4,8 @@ Scrapes tweets from [@anon_opin](https://twitter.com/anon_opin) and presents the
 
 ![alt text](sample_output/udakepmb.png "Sample output")
 
+More samples can be found [here](sample_output).
+
 
 ###Prerequisites
 
