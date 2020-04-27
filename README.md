@@ -1,4 +1,4 @@
-###Fake news opinion column
+### Fake news opinion column
 
 Scrapes tweets from [@anon_opin](https://twitter.com/anon_opin) and presents them as opinion columns from [The Guardian](https://www.theguardian.com/commentisfree/2020/apr/25/contact-apps-wont-end-lockdown-but-they-might-kill-off-democracy).
 
@@ -7,7 +7,7 @@ Scrapes tweets from [@anon_opin](https://twitter.com/anon_opin) and presents the
 More samples can be found [here](sample_output).
 
 
-###Prerequisites
+### Prerequisites
 
 - [Python 3](https://www.python.org/ftp/python/3.8.2/python-3.8.2.exe) (I used 3.8)
 - [Tweepy](http://docs.tweepy.org/en/latest/install.html) + API keys
@@ -26,6 +26,6 @@ Tested in Windows 10 only.
 
 **Disclaimer:** The files output by this do not reflect the opinions of the names presented.
 
-###Acknowledgements
+### Acknowledgements
 
  - [B3ta](http://b3ta.com/) for the [idea](https://www.facebook.com/b3tan/posts/3281475811865011)
