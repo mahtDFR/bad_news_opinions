@@ -25,7 +25,7 @@ More samples [here](sample_output).
 
 Tested in Windows 10 only.
 
-**Disclaimer:** The files output by this do not reflect the opinions of the names presented. Or mine.
+**Disclaimer:** The content output by this does not reflect the opinions of the names presented. Or mine.
 
 ### Acknowledgements
 
