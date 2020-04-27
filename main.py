@@ -62,13 +62,12 @@ total_items = 0
 for l in links_cycle:
 
 	source = requests.get(l).text  # request the url
-	soup = BeautifulSoup(source, 'lxml')  # using bs lib, make an object to read html
+	soup = BeautifulSoup(source, 'lxml')  # make a beautiful soup object to parse html
 
 	headline = soup.h1  # get headline from h1 tags on website
 	tweet = (random.choice(get_tweets.tweets))  # pick a random tweet from the tweet list
 	headline.string = tweet  # swap out the original headline string with the tweet
 
-	# print('generating fake headline: ' + '"' + headline.text + '"' + "\n")
 	print('"' + headline.text + '"')
 
 	with open("temp\soup.html", "w", encoding='utf-8') as file:  # dump modified html as file in temp dir
