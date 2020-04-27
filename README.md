@@ -12,7 +12,7 @@ More samples can be found [here](sample_output).
 - [Python 3](https://www.python.org/downloads/) (I used 3.8)
 - [Tweepy](http://docs.tweepy.org/en/latest/install.html) + API keys
 - [Requests](https://requests.readthedocs.io/en/master/user/install/)
-- [Beautiful soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
+- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
 - [Selenium ChromeDriver](https://chromedriver.chromium.org/home)
 
 ### Usage
@@ -20,7 +20,7 @@ More samples can be found [here](sample_output).
 - Install dependencies
 - Add API keys to ``keys_blank.py`` and rename it to ``keys.py``
 - Run ``main.py`` from a terminal
-- The script will scrape tweets and then dump 30 png images in a "bad-opinions" directory inside the current working directory
+- The script will scrape tweets and then dump 30 png images in a ```bad_opinions``` directory inside the current working directory
 
 Tested in Windows 10 only.
 
