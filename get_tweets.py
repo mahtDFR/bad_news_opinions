@@ -19,13 +19,14 @@ for i in data:  # iterate through the source data
 	if not "https://t.co/" in tweet:  # filter out tweets containing urls
 		if not "@" in tweet:  # filter tweets containing RTs
 			if not "&gt;" in tweet:  # filter '>' because this symbol doesn't play nice right now...
-				if not len(tweet) > 125:  # filter out any tweets greater than x chars
+				if not len(tweet) > 150:  # filter out any tweets greater than x chars
 					if not tweet.endswith("."):  # if the tweet text doesn't end with "."
 						if not tweet.endswith("!"):  # and if it doesn't end with "!"
-							tweet = tweet + "."  # add "." to the end
-							tweets.append(tweet)  # and then add the processed entry to the list
-					else:
-						tweets.append(tweet)  # otherwise, just add it to the list as it is
+							if not tweet.endswith("?"):  # and if it doesn't end with "?"
+								tweet = tweet + "."  # add "." to the end
+								tweets.append(tweet)  # and then add the processed entry to the list
+							else:
+								tweets.append(tweet)  # otherwise, just add it to the list as it is
 
 # (after writing this bit i realized the guardian website avoids periods
 # at the end of bylines - but whatever i'm leaving it in because i think it looks better).
