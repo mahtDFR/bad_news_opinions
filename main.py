@@ -1,6 +1,5 @@
 import os
 import random
-import shutil
 import string
 import time
 from itertools import cycle
@@ -65,7 +64,13 @@ for l in links_cycle:
 	soup = BeautifulSoup(source, 'lxml')  # make a beautiful soup object to parse html
 
 	headline = soup.h1  # get headline from h1 tags on website
-	tweet = (random.choice(get_tweets.tweets))  # pick a random tweet from the tweet list
+	try:
+		tweet = (random.choice(get_tweets.tweets))  # pick a random tweet from the tweet list
+		get_tweets.tweets.remove(tweet)  # remove the tweet when it's done to avoid repetition
+	except IndexError:
+		print("no more tweets in list!")
+		exit()
+
 	headline.string = tweet  # swap out the original headline string with the tweet
 
 	print('"' + headline.text + '"')
@@ -101,11 +106,14 @@ for l in links_cycle:
 	if int(total_items) >= 30:
 		print("that's enough for now." + "\n")
 		break
+		exit()
 
-# final exit routine
-driver.quit()
-time.sleep(1)
-print(":: destroying temp directory" + "\n")
-shutil.rmtree(temp)
-print("closing. goodbye." + "\n")
-exit()
+
+def exit():
+	# final exit routine
+	driver.quit()
+	time.sleep(1)
+	# print(":: destroying temp directory" + "\n")
+	# shutil.rmtree(temp)
+	print("closing. goodbye." + "\n")
+	exit()
